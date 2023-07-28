@@ -1,0 +1,35 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font: 1.1em "Roboto", sans-serif;
+    color: dimgrey;
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+p {
+    text-align: justify;
+}
+
+header {
+    font-size: 1.5em;
+}
+
+footer {
+    color: white;
+    background-color: gray;
+}
+
+.button {
+    background-color: lightgray;
+    margin: 3% 0 3% 0;
+    padding: 2% 4% 2% 4%;
+    border-radius: 5px;
+    border: 0;
+    width: fit-content;
+    float: right;
+}
+

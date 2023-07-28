@@ -1,1 +1,74 @@
-@import url("design-system.css");
+@import url(design-system.css);
+
+body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas:
+    'header header'
+    'nav main'
+    'footer footer';
+}
+
+header,
+footer {
+    padding: 2%;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+nav,
+main {
+    display: flex;
+}
+
+nav {
+    grid-area: nav;
+    flex-direction: column;
+    padding: 10%;
+}
+
+main {
+    grid-area: main;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post {
+    padding: 3%;
+    margin: 3%;
+    background-color: lightgray;
+    border-radius: 5px;
+    border: 0;
+    width: 25%;
+    height: fit-content;
+}
+
+h5 {
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+    body {
+        grid-template-areas:
+    'header header'
+    'nav nav'
+    'main main'
+    'footer footer';
+        grid-template-rows: 100px auto auto 100px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .post {
+        width: 80%;
+    }
+}

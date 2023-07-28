@@ -1,1 +1,99 @@
-@import url("design-system.css");
+@import url(design-system.css);
+
+body {
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+.author {
+    display: grid;
+    grid-template-rows: 50% auto;
+    grid-template-columns: 10% auto;
+    align-items: center;
+}
+
+.avatar-author {
+    grid-area: avatar;
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    max-width: 70px;
+}
+
+.link-author {
+    grid-area: link;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.about-author {
+    grid-area: about;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+header,
+footer {
+    padding: 2%;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+    margin: 5% 15%;
+    max-width: 1200px;
+}
+
+.img-blog {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.code {
+    margin: 0;
+    padding: 16px;
+    background-color: #cacaca;
+    border-radius: 2px;
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+}
+
+.code_inline {
+    background-color: #cacaca;
+    border-radius: 2px;
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .author {
+        grid-template-rows: 50% auto;
+        grid-template-columns: 50% auto;
+    }
+
+    .avatar-author {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .link-author {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .about-author {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+}
