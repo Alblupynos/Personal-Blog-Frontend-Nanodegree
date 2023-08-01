@@ -3,41 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Blog Post</title>
-    <link rel="stylesheet" href="css/post.css">
+    <link rel="stylesheet" href="../css/post.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Code+Pro:wght@300;400&display=swap">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Source+Code+Pro:wght@300;400&display=swap">
 
 </head>
 <body>
 <header>HTML Post</header>
 <main>
-    <div class="author">
-        <img src="img/author.png" alt="Author photo" class="avatar-author">
-        <a href="#author" class="link-author">Albina</a>
-        <span class="about-author">I am a software engineer with a desire to share knowledge with the community.</span>
-    </div>
-    <p>The <strong>HyperText Markup Language</strong> or HTML is the standard markup language for documents designed to
+    <aside class="author">
+        <img src="../img/img-author.png" alt="Author photo" class="author-avatar">
+        <p class="author-inf"><a href="#author">Albina</a> Frontend Developer at Udacity</p>
+        <q class="author-bio"><i>I am a software engineer with a desire to share knowledge with the
+            community.</i></q>
+    </aside>
+    <h1>HTML</h1>
+    <p>The <b>HyperText Markup Language</b> or HTML is the standard markup language for documents designed to
         be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by
         technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
-    <img class="img-blog" src="img/post-img1.jpg" alt="Code photo">
+    <img class="img-blog" src="../img/img-post1.jpg" alt="Code photo">
     <p>Web browsers receive HTML documents from a web server or from local storage and render the documents into
         multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for
         its appearance.</p>
-    <h3>HTML elements</h3>
+    <h2>HTML elements</h2>
     <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as
         interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents
         by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other items.
         HTML elements are delineated by tags, written using angle brackets.</p>
+    <h3>How to link code</h3>
     <p>To link <span class="code_inline">style.css</span> to <span class="code_inline">index.html</span> add the
         following line:</p>
     <p class="code">&lt;link rel="stylesheet" href="css/main6.css"&gt;</p>
+    <h2>JavaScript</h2>
     <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and
         content of web pages. The inclusion of CSS defines the look and layout of content. The World Wide Web Consortium
         (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS
         over explicit presentational HTML since 1997.[2] A form of HTML, known as HTML5, is used to display video and
         audio together with JavaScript.</p>
-    <a href="index.html" class="button">Back to blog</a>
+    <button class="back-button" type="button"><a href="../index.html" class="button">Back to blog</a></button>
 </main>
-<footer>Copyrighting 2023</footer>
+<footer>
+    <p>Copyrighting 2023</p>
+    <p>If You enjoy our content You can share it to <a href="#facebook">Facebook</a>, <a href="#twitter">Twitter</a>
+        or <a href="#linkedin">LinkedIn</a>!</p>
+</footer>
 </body>
 </html>

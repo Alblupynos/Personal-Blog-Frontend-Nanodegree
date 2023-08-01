@@ -5,17 +5,10 @@ html, body {
     color: dimgrey;
 }
 
-a {
-    text-decoration: none;
-    color: cadetblue;
-}
-
-p {
-    text-align: justify;
-}
-
 header {
     font-size: 1.5em;
+    font-weight: bold;
+    background-image: url("../img/img-header.jpg");
 }
 
 footer {
@@ -23,13 +16,28 @@ footer {
     background-color: gray;
 }
 
-.button {
-    background-color: lightgray;
-    margin: 3% 0 3% 0;
-    padding: 2% 4% 2% 4%;
-    border-radius: 5px;
-    border: 0;
-    width: fit-content;
-    float: right;
+a {
+    text-decoration: none;
+    color: lightskyblue;
+    font-weight: bold;
 }
 
+p {
+    text-align: justify;
+    text-indent: 2em;
+    word-break: break-all;
+}
+
+q {
+    word-spacing: 4px;
+    line-height: 1em;
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3 {
+    text-shadow: 1px 1px lightgray;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}

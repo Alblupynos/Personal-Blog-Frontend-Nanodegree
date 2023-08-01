@@ -1,4 +1,5 @@
 @import url(design-system.css);
+@import url(button.css);
 
 body {
     display: grid;
@@ -7,32 +8,6 @@ body {
     'header'
     'main'
     'footer';
-}
-
-.author {
-    display: grid;
-    grid-template-rows: 50% auto;
-    grid-template-columns: 10% auto;
-    align-items: center;
-}
-
-.avatar-author {
-    grid-area: avatar;
-    grid-row: 1 / span 2;
-    grid-column: 1;
-    max-width: 70px;
-}
-
-.link-author {
-    grid-area: link;
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.about-author {
-    grid-area: about;
-    grid-column: 2;
-    grid-row: 2;
 }
 
 header,
@@ -44,14 +19,43 @@ header {
     grid-area: header;
 }
 
-footer {
-    grid-area: footer;
-}
-
 main {
     grid-area: main;
     margin: 5% 15%;
     max-width: 1200px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.author {
+    display: grid;
+    grid-template-rows: 50% auto;
+    grid-template-columns: 30% auto;
+    align-items: center;
+}
+
+.author-avatar {
+    grid-area: avatar;
+    grid-row: 1;
+    grid-column: 1;
+    max-width: 70px;
+}
+
+.author-inf {
+    grid-area: link;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.author-bio {
+    grid-area: about;
+    grid-column: 1 / span 2;
+    grid-row: 2;
 }
 
 .img-blog {
@@ -74,26 +78,31 @@ main {
     border-radius: 2px;
     font-family: "Source Code Pro", monospace;
     font-size: 14px;
+    text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 1100px) {
     .author {
         grid-template-rows: 50% auto;
-        grid-template-columns: 50% auto;
+        grid-template-columns: 10% auto;
     }
 
-    .avatar-author {
-        grid-row: 1;
+    .author-avatar {
+        grid-row: 1 / span 2;
         grid-column: 1;
     }
 
-    .link-author {
+    .author-inf {
         grid-column: 2;
         grid-row: 1;
     }
 
-    .about-author {
-        grid-column: 1 / span 2;
+    .author-bio {
+        grid-column: 2;
         grid-row: 2;
+    }
+
+    footer {
+        flex-direction: row;
     }
 }
